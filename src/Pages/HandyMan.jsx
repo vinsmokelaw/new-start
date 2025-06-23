@@ -17,6 +17,7 @@ const LandingPage = () => {
       <Hero2 />
       <OurServices />
       <OurServices />
+      <Jobs />
       <Footer />
     </div>
   );
