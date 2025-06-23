@@ -1,4 +1,4 @@
-.testimonials-container {
+/* 
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -99,4 +99,9 @@
     width: 98vw;
     max-width: 98vw;
   }
+} */
+
+.card {
+  
+  transition: transform 0.3s ease;
 }
