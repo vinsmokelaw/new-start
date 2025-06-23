@@ -1,0 +1,51 @@
+.jobs-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "text image";
+  align-items: center;
+  gap: 48px;
+  padding: 80px 10vw;
+}
+
+.jobs-images {
+  grid-area: image;
+  max-width: 100%;
+}
+
+.jobs-collage-img {
+  width: 80%;
+  height: auto;
+}
+
+.jobs-content {
+  grid-area: text;
+  max-width: 100%;
+}
+
+.jobs-content h2 {
+  font-family: Poppins, sans-serif;
+  font-weight: 600;
+  font-size: 56px;
+  line-height: 100%;
+  text-align: left;
+}
+
+.jobs-content p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 768px) {
+  .jobs-section {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "text"
+      "image";
+  }
+
+  .jobs-content h2 {
+    text-align: center;
+  }
+}

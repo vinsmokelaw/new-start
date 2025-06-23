@@ -1,0 +1,158 @@
+.login-page {
+  font-family: 'Poppins', sans-serif;
+  background: #f7f7f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.login-header {
+  text-align: center;
+  position: relative;
+}
+
+.login-logo {
+  width: 120px;
+}
+
+.login-brand {
+  color: #FEB300;
+  font-family: 'Post No Bills Colombo ExtraBold';
+  font-size: 64px;
+  margin-top: 10px;
+}
+
+.login-switch {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.login-client,
+.login-provider {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.login-provider {
+  color: #FEB300;
+  border: 1px solid #000;
+  padding: 4px 16px;
+  border-radius: 8px;
+}
+
+.login-card {
+  background: white;
+  box-shadow: 1px 11px 5px 11px rgba(0, 0, 0, 0.25), 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  width: 100%;
+  max-width: 1000px;
+  padding: 60px 40px;
+  margin-top: 40px;
+}
+
+.login-title-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-title {
+  font-size: 48px;
+  color: #000;
+}
+
+.login-register {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.login-label {
+  display: block;
+  font-size: 24px;
+  margin-top: 32px;
+  margin-bottom: 8px;
+  color: #000;
+}
+
+.login-input {
+  width: 100%;
+  padding: 16px;
+  font-size: 20px;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.login-remember-row {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.login-checkbox {
+  width: 24px;
+  height: 24px;
+}
+
+.login-button {
+  margin-top: 32px;
+  padding: 16px 32px;
+  background: #000;
+  color: #fff;
+  border: none;
+  font-size: 24px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.login-divider {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 300;
+}
+
+.line {
+  height: 2px;
+  background: #000;
+  width: 100px;
+}
+
+.login-socials {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  color: #000;
+}
+
+.login-socials .svg-inline--fa {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.login-socials .svg-inline--fa:hover {
+  transform: scale(1.2);
+  color: #FEB300;
+}
+
+.login-bottom-text {
+  margin-top: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.login-register-link {
+  color: #FEB300;
+  cursor: pointer;
+}
