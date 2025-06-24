@@ -1,58 +1,75 @@
 import React from 'react';
 import './Experience.css';
-import houseImg from '../../assets/pictures/Group 4.png';
-import { Settings } from 'lucide-react';
+import houseImg from '../../assets/pictures/Group 4.png'; // Adjust the path as necessary
+import c1 from '../../assets/pictures/C1.png'; // Adjust the path as necessary  
+import { Settings, ArrowUpRight } from 'lucide-react';
 
-const Experience = () => {
+const Experience = ({ showButton = true }) => {
   return (
-    <div className="experience-section">
+    <section className="experience-section">
       <div className="experience-container">
-        {/* Left Column - Image */}
+
         <div className="experience-left">
-          <div className="grouped-wrapper">
-            <div className="grouped-image">
-              <img src={houseImg} alt="Experience Visual" />
-              <div className="experience-number">
-                <span className="highlight">15+</span>
-                <span className="years-text">Years of Experience</span>
-              </div>
+          <div className="grouped-image">
+            <img src={houseImg} alt="Experience Visual" />
+            <div className="experience-number">
+              <span className="highlight">15+</span>
+              <span className="years-text" style={{ fontSize: '16px' }}>Years of Experience</span>
             </div>
           </div>
         </div>
 
-        {/* Right Column - Text */}
         <div className="experience-right">
-          <div className="why-choose-us">
+          <section className="why-choose-us">
             <h4>
-              <Settings size={20} color="#FEB300" style={{ marginRight: '5px', verticalAlign: 'middle' }} fontWeight={400}/>
+              <Settings size={20} style={{ marginRight: '10px' }} />
               Why Choose Us?
             </h4>
             <h2>
-              "Your <span>Trusted</span> Source for Skilled <span>Professionals!</span>"
+              Your <span>Trusted</span> Source for Skilled <span>Professionals!</span>
             </h2>
             <p>
               We aim to simplify the process of finding trustworthy professionals by
-              providing a user-friendly marketplace that prioritizes quality and
-              credibility...
+              providing a user-friendly marketplace that prioritizes quality and credibility.
             </p>
 
-            <div className="features-list">
-              {[
-                'Verified Professionals',
-                'User-Friendly Experience',
-                'Transparent Reviews',
-                'Geolocation Services'
-              ].map((feature) => (
-                <div key={feature} className="feature-item">
-                  <Settings size={25} color="#FEB300" style={{ marginRight: '15px', flexShrink: 0 }} />
-                  {feature}
+            <div className="features-list-row">
+                <div className="features-list">
+                  {[
+                    'Verified Professionals',
+                    'User-Friendly Experience',
+                    'Transparent Reviews',
+                    'Geolocation Services',
+                  ].map((feature, idx) => (
+                    <div className="feature-item" key={idx}>
+                      <Settings size={20} style={{ marginRight: '10px', color: '#FEB300' }} />
+                      {feature}
+                    </div>
+                  ))}
                 </div>
-              ))}
-            </div>
-          </div>
+                <div className="c1">
+                  <img src={c1} alt="C1 Icon" />
+                </div>
+              </div>
+
+           
+
+            {/* Only show the button if showButton is true */}
+            {showButton && (
+              <button className="learnm-btn">
+                <span className="learnm-text">Learn More</span>
+                <span className="learnm-arrow-box">
+                  <ArrowUpRight className="learnm-arrow-icon" />
+                </span>
+              </button>
+            )}
+            
+          </section>
         </div>
+
       </div>
-    </div>
+   
+    </section>
   );
 };
 

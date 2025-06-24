@@ -1,9 +1,14 @@
 import React from 'react'
+import Companies from '../components/Companies/Companies.jsx'
+import '../components/Companies/Companies.css'
 
-const Companies = () => {
+const CompaniesPage = () => {
   return (
-    <div>this is the Companies page</div>
+    <div>
+      <Nav />
+      <Companies />
+    </div>
   )
 }
 
-export default Companies
+export default CompaniesPage
