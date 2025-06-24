@@ -1,0 +1,141 @@
+.footer {
+  width: 100vw;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  padding-top: 40px;
+  box-sizing: border-box;
+}
+
+.items {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  margin-bottom: 6vh;
+  display: flex;
+  justify-content: center;
+}
+
+.items * {
+  color: white;
+}
+
+/* Flex row for footer sections */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.col-sm-6,
+.col-lg-3,
+.col-md-3 {
+  flex: 1 1 200px;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.centerItems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+
+.footerlogo {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 9rem;
+  height: 6rem;
+  margin-bottom: 1rem;
+  
+  
+}
+
+/* Link sections */
+.footerlinks,
+.footerlink {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: left;
+}
+
+.footerlinks h4,
+.footerlink h4 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 18px;
+}
+
+.footerlinks a,
+.footerlink a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.footerlinks a:hover,
+.footerlink a:hover {
+  color: orange;
+}
+
+/* Bottom bar */
+.copyright {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.copyright p {
+  color: white;
+  font-size: 14px;
+}
+
+/* Social Icons */
+.socialsFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-left: 0.5rem 0;  
+}
+
+.socialsFooter svg {
+  color: white;
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.socialsFooter svg:hover {
+  color: #FEB300;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .copyright {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+}

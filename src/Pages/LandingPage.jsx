@@ -7,7 +7,7 @@ import OurServices from '../components/OurServices/OurServices';
 import Testimonials from '../components/Testimonials/Testimonials';
 import Team from '../components/Team/Team';
 import Jobs from '../components/Jobs/Jobs';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer/Footer2';
 
 const LandingPage = () => {
   return (

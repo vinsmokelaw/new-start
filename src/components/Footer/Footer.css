@@ -1,5 +1,5 @@
 .footer{
-    background-image: url(../../assets/pictures/footer.png);
+    background-image: url(../Componets/pictures/footer.png);
     width: 100vw;
     height: 100vh;
     background-size: cover;
@@ -28,9 +28,10 @@
 }
 
 .footerlogo{
-    background-image: url(../../assets/pictures/buildLogo.png);
+    background-image: url(./../Componets/pictures/footerlogo.png);
     width: 9rem;
-
+    background-position: 0 0;
+    background-repeat: no-repeat;
     background-size: cover;
     height: 6rem;
 }
@@ -40,14 +41,6 @@
     flex-direction: column;
     gap: 8px;
     text-align: left;
-}
-
-.footerlink{
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    text-align: left;
-    margin-top: -3rem;
 }
 
 .footerlinks *{
