@@ -15,8 +15,8 @@ const LandingPage = () => {
     <div className="landing-page">
       <NavBar />
       <Hero2 />
-      <OurServices />
-      <OurServices />
+      <OurServices showHeader={false} />
+      <OurServices showHeader={false} />
       <Jobs />
       <Footer />
     </div>
