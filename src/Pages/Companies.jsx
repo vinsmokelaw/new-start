@@ -1,14 +1,23 @@
-import React from 'react'
-import Companies from '../components/Companies/Companies.jsx'
-import '../components/Companies/Companies.css'
+// src/pages/LandingPage.jsx
+import React from 'react';
+import NavBar from '../components/NavBar/NavBar';
+import Hero from '../components/Hero/Hero';
+import Experience from '../components/Experience/Experience';
+import OurServices from '../components/OurServices/OurServices';
+import Testimonials from '../components/Testimonials/Testimonials';
+import Team from '../components/Team/Team';
+import Jobs from '../components/Jobs/Jobs';
+import Footer from '../components/Footer/Footer2';
+import Companies from '../components/Companies/Companies';
 
-const CompaniesPage = () => {
+const LandingPage = () => {
   return (
-    <div>
-      <Nav />
+    <div className="landing-page">
+      <NavBar />
       <Companies />
+   
     </div>
-  )
-}
+  );
+};
 
-export default CompaniesPage
+export default LandingPage;

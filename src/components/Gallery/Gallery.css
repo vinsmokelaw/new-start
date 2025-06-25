@@ -1,0 +1,44 @@
+.gallery-section {
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.gallery-section h3 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.gallery-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-grid img {
+  width: 220px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.see-all {
+  margin-top: 1.5rem;
+  background-color: transparent;
+  border: 2px solid #FEB300;
+  color: #FEB300;
+  padding: 0.5rem 1.5rem;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.see-all:hover {
+  background-color: #FEB300;
+  color: #fff;
+}

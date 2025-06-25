@@ -7,6 +7,7 @@ import LandingPage from './Pages/LandingPage.jsx';
 import Handyman from './Pages/HandyMan.jsx';
 import Companies from './Pages/Companies.jsx';
 import About from './Pages/About.jsx';
+import HandymanProfile from './Pages/HandymanProfile.jsx';
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -22,7 +23,9 @@ function App() {
         <Route
           path="/companies" element={isAuthenticated ? <Companies /> : <Navigate to="/" replace />}/>
         <Route
-          path="/about" element={isAuthenticated ? <About/> : <Navigate to="/" replace />}/>  
+          path="/about" element={isAuthenticated ? <About/> : <Navigate to="/" replace />}/> 
+        <Route 
+          path="/handymanprofile" element={isAuthenticated ? <HandymanProfile /> : <Navigate to="/" replace />}/> 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>

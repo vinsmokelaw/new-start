@@ -1,9 +1,9 @@
 import React from 'react';
 import './OurServices.css';
+import { Link } from 'react-router-dom';
 import Card from "../../assets/pictures/Card.png";
 import Card2 from "../../assets/pictures/Card2.png";
 import Card3 from "../../assets/pictures/Card3.png";
-
 
 const OurServices = ({ showHeader = true }) => {
   return (
@@ -19,24 +19,25 @@ const OurServices = ({ showHeader = true }) => {
 
       <div className="services-cards">
         {/* Card 1 */}
-        <div className="service-card">
+        <Link to="/handymanprofile" className="service-card">
           <div className="card-background-layer"></div>
           <img src={Card} alt="Construction" className="card-image" />
-        </div>
+        </Link>
 
         {/* Card 2 */}
-        <div className="service-card">
+        <Link to="/handymanprofile" className="service-card">
           <div className="card-background-layer"></div>
           <img src={Card2} alt="Plumbing" className="card-image" />
-        </div>
+        </Link>
 
         {/* Card 3 */}
-        <div className="service-card">
+        <Link to="/companies" className="service-card">
           <div className="card-background-layer"></div>
           <img src={Card3} alt="Electrical" className="card-image" />
-        </div>
+        </Link>
       </div>
     </div>
   );
 };
+
 export default OurServices;
